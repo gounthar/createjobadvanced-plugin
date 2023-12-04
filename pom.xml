@@ -29,7 +29,11 @@
         </dependencies>
     </dependencyManagement>
 
-	<dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>io.jenkins.plugins</groupId>
+            <artifactId>commons-lang3-api</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.jenkins-ci.main</groupId>
 			<artifactId>maven-plugin</artifactId>
@@ -42,11 +46,6 @@
 		</dependency>
 
         <!--Upper bounds conflict-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.11</version>
-        </dependency>
 	</dependencies>
 
 	<scm>
